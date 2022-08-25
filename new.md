@@ -1,2 +1,1 @@
-#Trying out something new
-Let's hope it works
+Compilation of some of my Front-end practice projects.
