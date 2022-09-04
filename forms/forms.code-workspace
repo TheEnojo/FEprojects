@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Web folders\\css  box models"
+		},
+		{
+			"path": "..\\Web folders\\filestructure\\survey site"
+		},
+		{
+			"path": "..\\rform"
+		},
+		{
+			"path": "..\\tables"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "tables"
+	}
+}

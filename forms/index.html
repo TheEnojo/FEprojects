@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+    <div class="container">
+        <form method="POST" action="#">
+            <h1>Sign up!</h1>
+
+            <label for="name">Name: (required)</label>
+                <input required type="text" placeholder="Grace" aria-placeholder="please input your name"
+                    id="name" name="name" autocomplete="name" aria-required="true">
+             <br>
+            <!-- added autocomplete attribute so that the user does not have to fill the same information over again-->
+            <!--added required attribute to form-->
+
+            <!--<label for last-name>Last name: (required)</label>
+                <input required type="text" placeholder="Godwin" aria-placeholder="please input your last name"
+                    id="last-name" name="second-name" autocomplete="second-name" aria-required="true">
+             <br>--> <!-- added aria-placeholder for accessibility-->
+
+
+            <label for="email">Email (required)</label> 
+                <input required type="email" placeholder="grace@gmail.com"
+                    aria-placeholder="please input your email adress" id="email" name="email" aria-required="true" >
+            <br>
+
+            <label for="phone-number">Phone number:</label> 
+                <input required type="number" placeholder="09000000000"
+                    aria-placeholder="please input your phone number" id="phone-number" name="phone-number"
+                    inputmode="numeric">
+            <br>
+
+            <label for="password">Password (required)</label> 
+                <input required  minlength="8"type="password" id="password" name="password" aria-describedby="pw-hint"
+                    aria-required="true"> <br>
+                <p id="pw-hint" aria-hidden="true">password should not be less than 8 characters.</p>
+            <br>
+            <!--aria-describedby and aria-hidden for accessibility-->
+
+
+            <label for="age-range" class="agelabel">Age (required)</label>
+                <select id="age-range" name="age-range" aria-required="true">
+                    <option value="17-20">17-20</option>
+                    <option value="21-24">21-24</option>
+                </select> <br>
+             
+
+            <button>Submit</button>
+
+
+
+
+
+
+        </form>
+    </div>
+</main>
+
+</body>
+
+</html>
