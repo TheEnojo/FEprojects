@@ -4,7 +4,7 @@ margin : 3.125rem auto 0  auto;}*/
 .container {
     width: 400px;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffffcc;
     display: flex;
     justify-content: center;
