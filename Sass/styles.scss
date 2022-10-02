@@ -1,0 +1,40 @@
+@use 'variables';
+
+$brand-colors:(
+    "primary": #001514,
+    "accent":#c2d076,
+    "extra1": #000,
+    "extra2": #fff
+);
+
+@mixin display($display:flex){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin link-style{
+    padding-right: 30px;
+    font-size: 16px;
+}
+.headerdiv{
+    @include display;
+
+#{&}__list{
+    list-style-type: variables.$list-style1;
+    @include display;
+}
+
+#{&}__link{
+
+    text-decoration: variables.$text-decoration1;
+    color: map-get($brand-colors , extra1);
+    font-size: 30px;
+}
+
+#{&}__item{
+    @include link-style;
+}
+}
+
+

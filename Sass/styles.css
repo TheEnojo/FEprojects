@@ -1,0 +1,20 @@
+.headerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerdiv .headerdiv__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerdiv .headerdiv__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+}
+.headerdiv .headerdiv__item {
+  padding-right: 30px;
+  font-size: 16px;
+}/*# sourceMappingURL=styles.css.map */
