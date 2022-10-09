@@ -1,0 +1,116 @@
+body {
+    background-color: #f5f5dc;
+    overflow-x: hidden;
+}
+         
+li {
+    display: inline;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #f5f5dc;
+}
+
+ul {
+    background-color: #f5f5dc;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    left: -130px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+img {
+    position: relative;
+    left: 450px;
+    top: -450px;
+    ;
+}
+
+h1 {
+    color: #13202d;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    position: relative;
+    top: -60px;
+    color: #2765b6;
+    ;
+}
+
+button {
+    border: none;
+    background-color: #2765b6;
+    position: relative;
+    left: -930px;
+    top: -800px;
+    color: white;
+    font-size: 13px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 1px 2px #0000;
+    height: 30px;
+    width: 120px;
+
+}
+
+.navli :hover {
+    color: #2765b6;
+    cursor: pointer;
+}
+
+
+.cta :hover {
+    color: #13202d;
+    cursor: pointer;
+}
+
+.navv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+@media only screen and (max-width:700px) {
+
+    .navbar{
+        display: flex;
+        text-align: center;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+
+
+
+}

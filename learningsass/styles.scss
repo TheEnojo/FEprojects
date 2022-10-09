@@ -1,0 +1,104 @@
+@use 'partial';
+@use "sass:math";
+/*sass variables*/
+
+$font-stack: Arial, sans-serif;
+$primary-color: lightpink;
+$link-color: blue;
+/*MAPS*/
+$font-weights: (
+    /*key*/
+    /*value*/
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+
+
+body {
+    font: $font-stack;
+    background-color: $primary-color;
+    font-weight: weight(regular);
+}
+
+
+h1{
+    padding: 0;
+    font-weight: map-get($font-weights, regular );
+}
+
+$background-image: "images/11.jpg";
+$brand-color:(
+    "brand1":blue,
+    "brand2": red,
+    "brand3": yellow
+);
+
+h1{
+    padding: 0;
+    font-weight: map-get($font-weights, regular );
+}
+body {
+    font: $font-stack;
+    background-color: $primary-color;
+    font-weight: weight(regular);
+}
+
+.main{
+h1{
+    padding: 0;
+    font-weight: map-get($font-weights, regular );
+}
+a{
+    margin: 0;
+    color: $link-color;
+}
+p{
+    padding: 0;
+    color: $link-color;
+}
+background-image : url("#{$background-image}"); ;
+
+}
+
+
+h1{
+   background-color: partial.$primary-color;
+}
+
+@mixin theme ($theme: white) {
+    background-color: $theme;
+    color: gray
+}
+
+.main{
+    @include theme
+}
+
+%design-border{
+    border: 1px solid $link-color;
+    border-radius: 4px
+}
+
+%shared-border{
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.main{
+    @extend %design-border;
+}
+
+.main{
+    width: math.div(100px, 100px) * 700px;
+}
+
+
+
+
+

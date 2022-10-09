@@ -1,0 +1,430 @@
+@use 'variables';
+@use 'sass:math';
+
+
+@mixin media($media: 765px) {
+    @media only screen and (max-width:$media) {
+        @content;
+    }
+}
+
+$brand-colors: (
+    "primary": #001514,
+    "accent":#c2d076,
+    "extra1": #000,
+    "extra2": #fff,
+    "extra3":rgba(255, 255, 255, 0.05)
+);
+
+@mixin display($display: flex) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html,
+body {
+    margin: variables.$default-margin-padding;
+    padding: variables.$default-margin-padding;
+    font-family: variables.$font-stack;
+    overflow-x: variables.$hide
+}
+
+.headerdiv {
+    @include display;
+
+    @include media(765px) {
+        padding-top: math.div(100px, 100px)* 30px;
+    }
+}
+
+.headerdiv1 {
+    margin-left: variables.$logo-margin;
+}
+
+@mixin flex($flex: flex) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerdiv2 {
+    @include flex(flex);
+    margin-right: variables.$logo-margin;
+
+
+
+
+
+}
+
+.headerdiv__list {
+    list-style-type: variables.$list-style1;
+    @include display;
+
+    @include media(765px) {
+        display: variables.$list-style1;
+    }
+}
+
+.headerdiv__menu {
+    display: variables.$list-style1;
+
+    @include media(765px) {
+        display: variables.$flex;
+    }
+}
+
+.headerdiv__link {
+    text-decoration: variables.$text-decoration1;
+    color: map-get($brand-colors , extra2);
+    font-size: variables.$link-font-size;
+    padding-right: variables.$link-padding;
+
+    &:hover {
+        cursor: pointer;
+        color: map-get($brand-colors, accent);
+    }
+}
+
+.combineddiv {
+    background-image: url("#{variables.$background-image}");
+    height: math.div(100px, 100px)* 650px;
+    background-repeat: variables.$background-repeat;
+    background-size: variables.$fit;
+    width: variables.$combineddiv-width;
+
+    @include media(765px) {
+        height: auto;
+
+    }
+}
+
+
+@mixin hero($hero: flex) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hero {
+    @include hero(flex);
+    width: variables.$combineddiv-width;
+    margin-left: math.div(100px, 100px) *50px;
+
+    @include media(765px) {
+        display: block;
+        justify-content: center;
+        margin: 0;
+    }
+
+}
+
+
+.hero__text {
+    @include media(765px) {
+
+        width: 100%;
+    }
+}
+
+@mixin heroimg ($heroimg: flex) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image {
+    margin-right: math.div(100px, 100px)* 100px;
+    margin-top: math.div(100px, 100px)* 100px;
+    object-fit: variables.$fit2;
+
+    @include media(765px) {
+        margin: variables.$responsive-margin;
+        width: 100%;
+    }
+}
+
+
+.hero__h1 {
+    color: map-get($brand-colors , extra2);
+    font-size: variables.$size1;
+
+    @include media(765px) {
+        text-align: center;
+        font-size: 75px;
+    }
+}
+
+.hero__p {
+    color: map-get($brand-colors , extra2);
+    line-height: variables.$line-height;
+    font-size: variables.$size2;
+
+    @include media(765px) {
+        text-align: center;
+
+    }
+
+}
+
+.hero__button {
+    width: math.div(100px, 100px)* 140px;
+    height: math.div(100px, 100px)* 40px;
+    background-color: map-get($brand-colors , extra2);
+    color: map-get($brand-colors , primary);
+    border: variables.$list-style1;
+    border-radius: math.div(100px, 100px) *4px;
+
+    @include media(765px) {
+        margin: variables.$responsive-margin;
+        width: 200px;
+        margin-left: 25%;
+
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: map-get($brand-colors , accent);
+    }
+}
+
+@mixin div3($div3: flex) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.div2 {
+    @include div3(flex);
+    padding: math.div(100px, 100px)*40px;
+    width: math.div(100px, 100px)*1000px;
+    background-color: map-get($brand-colors , extra2);
+    box-shadow: variables.$hero-shadow;
+    margin: variables.$auto-margin;
+
+    @include media(765px) {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.div2__img {
+    @include media (765px) {
+        margin: variables.$auto-margin;
+        width: 100%;
+    }
+}
+
+.div2__h4 {
+    font-size: math.div(100px, 100px)*40px;
+    color: map-get($brand-colors , primary);
+
+    @include media(765px) {
+        text-align: center;
+    }
+}
+
+.div2__p {
+    font-size: math.div(100px, 100px)* 18px;
+    line-height: variables.$line-height;
+    margin-right: math.div(100px, 100px)* 40px;
+
+    @include media(765px) {
+        text-align: center;
+        margin: left 0px;
+        margin-right: 20px;
+        margin-bottom: 100px
+    }
+}
+
+
+.div3 {
+    @include div3(flex);
+    padding: math.div(100px, 100px)*40px;
+    width: variables.$combineddiv-width;
+    background-color: map-get($brand-colors , accent);
+    margin: variables.$auto-margin;
+
+    @include media(765px) {
+        display: block;
+    }
+}
+
+.div3__h4 {
+    font-size: math.div(100px, 100px)*70px;
+    color: map-get($brand-colors , primary);
+
+
+
+}
+
+.div3__p {
+    font-size: math.div(100px, 100px)*22px;
+    line-height: variables.$line-height;
+    margin-right: math.div(100px, 100px)* 40px;
+    margin-top: math.div(100px, 100px)* -70px;
+    margin-left: math.div(100px, 100px)* 10px;
+}
+
+
+
+
+.div4 {
+    @include div3(flex);
+    padding: math.div(100px, 100px)*40px;
+    width: math.div(100px, 100px)* 1000px;
+    background-color: map-get($brand-colors , extra2);
+    box-shadow: variables.$hero-shadow;
+    margin: variables.$auto-margin;
+    
+    @include media(765px) {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.div4__h4 {
+    font-size: math.div(100px, 100px)*40px;
+    color: map-get($brand-colors , primary);
+     
+    @include media(765px) {
+        text-align: center;
+        
+    }
+}
+
+.div4__p {
+    font-size: math.div(100px, 100px)* 18px;
+    line-height: variables.$line-height;
+    margin-right: math.div(100px, 100px)* 40px;
+     
+    @include media(765px) {
+        text-align: left;
+        padding-left: 30px;
+    }
+}
+
+.div4__text{
+     @include media(765px) {
+       width: 100%
+    }
+}
+
+.div4__img{
+ 
+    @include media(765px) {
+      width: 100%;
+    }
+}
+
+
+
+.div5 {
+    @include div3(flex);
+    padding: math.div(100px, 100px)*40px;
+    width: variables.$combineddiv-width;
+    background-color: map-get($brand-colors, primary);
+    margin: variables.$auto-margin;
+     
+    @include media(765px) {
+        display: block;
+        padding: 10px;
+    }
+}
+
+.div5__h4 {
+    font-size: math.div(100px, 100px)*40px;
+    color: map-get($brand-colors , accent);
+}
+
+.div5__p {
+    font-size: math.div(100px, 100px)* 18px;
+    line-height: variables.$line-height;
+    margin-right: math.div(100px, 100px)* 40px;
+    color: map-get($brand-colors , extra2);
+
+}
+
+.div5__img{
+     
+    @include media(765px) {
+        width: 100%;
+    }
+}
+
+@mixin footertop($footertop: flex) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include media(765px) {
+        display: block;
+        padding: 20px;
+    }
+}
+
+.footer1 {
+    @include footertop(flex);
+    width: math.div(100px, 100px)* 1000px;
+    background-color: map-get($brand-colors , extra2);
+    box-shadow: variables.$hero-shadow;
+    margin: variables.$auto-margin;
+}
+
+.footertop1__p,
+.footertop2__p,
+.footertop3__p {
+    font-size: math.div(100px, 100px) *20px;
+    border-bottom: variables.$border-bottom;
+}
+
+.footertop1__link,
+.footertop2__link,
+.footertop3__link {
+    text-decoration: variables.$text-decoration1;
+    color: map-get($brand-colors , extra1);
+}
+
+.footertop1-list,
+.footertop2-list,
+.footertop3-list {
+    list-style-type: variables.$list-style1;
+    margin-left: math.div(200px, 100px) *-20px;
+}
+
+.footertop1__item,
+.footertop2__item,
+.footertop3__item {
+    padding-top: math.div(200px, 100px) *10px;
+}
+
+.footerbottom__p {
+    color: map-get($brand-colors , extra2);
+}
+
+.footerbottom__img {
+    padding-right: math.div(200px, 100px) *5px;
+}
+
+.footerbottom__link {
+    color: map-get($brand-colors, extra2);
+}
+
+%footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: map-get($brand-colors, primary);
+    margin-top: 120px;
+}
+
+.footerbottom {
+    @extend%footer-bottom;
+}

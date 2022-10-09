@@ -1,0 +1,26 @@
+body{ padding: 0; margin: 0;background: #fff; background-image: url('pexelsw.jpg');
+    background-size: cover; background-position:center ;}
+    
+    
+        
+
+.navbar {fill-opacity: 0%; }
+.navlink{color:#fff;  }
+.navbar-brand{color: #fff; cursor: pointer; font-family:cinzel; src: url("cinzel.ttf"); }
+.nav-link{margin-left: 1em !important; color: #fFF; font-family:cinzel; src: url("cinzel.ttf"); }
+.nav-link:hover{color: burlywood}
+.navbar-collapse{justify-content: flex-end;}
+
+header
+ .description{ left: 50%; position: absolute; top: 45%;
+transform: translate(-50%,-55%); text-align: center;}
+
+.description h1 { color: burlywood;  font-family:cinzel; src: url("cinzel.ttf"); 
+    font-size: 1000%;  text-align: center; } 
+
+.description p {color:#fff; font: 1.3rem; line-height: 1.5; }
+
+.description button{ border: 1px solid white;
+background:0%;  line-height: 15px;
+border-radius: 35px;  
+color: white; font-family:Arial, Helvetica, sans-serif; }

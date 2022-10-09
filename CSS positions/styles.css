@@ -1,0 +1,80 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    text-align: center;
+}
+
+.div1 {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    color: white;
+}
+
+
+.div2 {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    color: white;
+}
+
+
+.div3 {
+    height: 100px;
+    width: 100px;
+    background-color: #111439;
+    color: white;
+}
+
+.static-position {
+    display: flex;
+    justify-content: space-around;
+    position: static;
+    align-items: center;
+}
+
+
+.relative-position {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+.absolute-position {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+
+.fixed-position {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    margin-top: 30px;
+    align-items: center;
+    top: 20px;
+    /*Stayes at the same position as the absolute position then i set a top of 20px and it went up*/
+}
+
+
+.sticky-position {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    position: sticky;
+    align-items: center;
+    top: -50px;
+    left: 30%;
+}

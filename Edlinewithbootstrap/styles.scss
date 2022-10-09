@@ -1,0 +1,14 @@
+$mycolors: (
+"primary" : #161616,
+"accent" : beige,
+
+);
+
+body{
+background-color: map-get($mycolors, "accent");
+height: 500px;
+}
+
+.nav-link{
+    color: map-get($mycolors, "primary");
+}

@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: polysans-bulky;
+  src: url("fonts/619b58064e44df14b61b3e79_PolySans-Bulky.woff2") format("woff2");
+}
+@font-face {
+  font-family: polysans-slim;
+  src: url("fonts/619b58064e44df57421b3e7b_PolySans-Slim.woff2") format("woff2");
+}
+@font-face {
+  font-family: polysans-neutral;
+  src: url("fonts/619b58064e44df83e31b3e7c_PolySans-Neutral.woff2") format("woff2");
+}
+.btn-primary {
+  background-color: #FF7752;
+  border: none;
+  font-size: 14.344px;
+}
+
+.hero__h1 {
+  font-size: 56px;
+  line-height: 64px;
+  font-family: polysans-normal;
+  color: #001f0e;
+}
+
+.nav-item {
+  font-size: 14.344px;
+  font-weight: 400;
+}
+
+.btn-outline-secondary {
+  border-color: #FF7752;
+  color: #FF7752;
+  font-size: 14.344px;
+}
+
+.g2-link {
+  text-decoration: none;
+  color: #FF7752;
+}
+
+.pink {
+  background-color: #fff1ed;
+}
+
+.blue-link {
+  text-decoration: none;
+}
+
+.green {
+  color: #001f0e;
+}
+
+.div7-h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.div7-child {
+  width: 220.8px;
+}
+
+.div8-h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.div9-w {
+  width: 286.5px;
+}/*# sourceMappingURL=styles.css.map */

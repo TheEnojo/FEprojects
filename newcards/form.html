@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-between mt-5 ms-3" id="fdiv">
+
+        <form id="firstForm">
+            <label for="fn">First name</label>
+            <input type="text" id="fn" fields="fname">
+            <label for="ln">Last name</label>
+            <input type="text" id="ln" fields="lname">
+            <label for="email">E-mail <address></address></label>
+            <input type="text" id="email" fields="email">
+            <button type="button"  fields="submit" onClick='showAjax("", "secondpage.html","fdiv")'>submit</button>
+        </form>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+    <script src="jQryfile.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

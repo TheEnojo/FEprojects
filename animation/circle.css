@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#023e8a, #00b4d8);
+    border-radius: 50%;
+    animation-duration: 0.8s;
+    animation-name: circlerotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-top: 10px;
+}
+
+@keyframes circlerotate {
+    from {
+        transform: rotate(0 deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.pulse {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(rgb(2, 62, 138), rgb(0, 180, 216));
+    border-radius: 50%;
+    
+    animation-duration: 2s;
+    animation-name: pulse;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse{
+
+from{
+    box-shadow: 0 0 0px  rgba(2, 62, 138,.7), rgba(0, 180, 216,.7);
+}
+
+to{
+    box-shadow: 0 0 0 50px  rgba(0, 180, 216,.7);
+}
+
+}
+
+
+
+

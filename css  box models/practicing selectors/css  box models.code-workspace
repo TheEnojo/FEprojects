@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Edline"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css  box models"
+	}
+}

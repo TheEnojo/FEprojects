@@ -1,0 +1,30 @@
+
+
+@font-face {
+    font-family: "bosch";
+    src: url("Bosch.otf");
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: bosch;
+}
+
+body {
+    background-color: #fafafa
+}
+
+.div2{
+    background-image: url(images/);
+}
+
+
+
+
+
+
+
+
+
