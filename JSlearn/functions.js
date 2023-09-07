@@ -101,9 +101,9 @@ number(2)
 
 
 
-function number(b) {
+function number(c) {
   for (let d = 1; d < 30/2;  d++) {
-    console.log(d * b);
+    console.log(d * c);
   }
 
 }
