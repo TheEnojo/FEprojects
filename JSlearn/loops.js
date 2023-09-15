@@ -4,7 +4,7 @@
 
 
 let a = 0;
-while (a < 5) {
+while (a < 7) {
     console.log('amazing')
     a++;
 }
