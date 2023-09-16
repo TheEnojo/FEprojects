@@ -8,7 +8,7 @@ and we're allocating a new array of 5 readings
 
 we can access each reading in an array using a for loop
 STEPS IN DSA
-1 Analysis, discovery, even real life applications as to why you would use this data structure
+1 Analysis, discovery, even real life applications as to why you would use this data structure.
 2 Next step is the implementation
 Core storage of the data structure is an array then you have those operations that perform on that underlying  data structure.
 3 Solving problems with it
