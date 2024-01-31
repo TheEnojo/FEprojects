@@ -27,7 +27,7 @@ alert(arr.length); //returns 3 */
 removes deleteCount elements and then inserts elem1, ..., elemN at their place. Returns the array of removed elements.*/
 
 let sib = ["Grace", "Sharon", "Goodluck", "Goodnews"];
-sib.splice(0, 2, "ene", "weirdo"); //removes grace and sharon and replaces it with ene and weirdo
+sib.splice(0, 2, "ene", "oma"); //removes grace and sharon and replaces it with ene and weirdo
 console.log(sib) 
 
 let removed= sib.splice(0,2);
